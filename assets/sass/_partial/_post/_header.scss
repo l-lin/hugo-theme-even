@@ -1,6 +1,14 @@
 .post-header {
   margin-bottom: 20px;
 
+  .post-image {
+    background-position: 50% 50% !important;
+    height: 150px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
   .post-title {
     margin: 0;
     font-size: $post-title-font-size;

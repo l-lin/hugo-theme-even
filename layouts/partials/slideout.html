@@ -21,5 +21,10 @@
         <li class="mobile-menu-item">{{ .Name }}</li>
       </a>
     {{- end }}
+    <li class="mobile-menu-item">
+      <form class="menu-search" onsubmit="duckSearch('mobile-search-field')" action="javascript:void(0)">
+        <input id="mobile-search-field" type="text" value="" placeholder="Search..." style="width: 110px">
+      </form>
+    </li>
   </ul>
 </nav>

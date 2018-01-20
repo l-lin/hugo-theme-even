@@ -1,5 +1,6 @@
 <div class="logo-wrapper">
   <a href="{{ "/" | relLangURL }}" class="logo">
+    <img src="/images/yoo_jae_suk.png" alt="Yoo Jae Suk" />&nbsp;
     {{- if .Site.Params.logoTitle -}}
       {{ .Site.Params.logoTitle }}
     {{- else -}}
@@ -15,5 +16,10 @@
         <a class="menu-item-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
       </li>
     {{- end }}
+    <li class="menu-item">
+      <form class="menu-search" onsubmit="duckSearch('search-field')" action="javascript:void(0)">
+        <input id="search-field" type="text" placeholder="Search...">
+      </form>
+    </li>
   </ul>
 </nav>

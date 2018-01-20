@@ -43,9 +43,7 @@
 {{- end -}}
 
 <!-- Favicon and Touch icons -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" />
 <link rel="manifest" href="{{ "manifest.json" | relURL }}">
 <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | relURL }}" color="#5bbad5">
 
@@ -73,6 +71,9 @@
 {{ range .Site.Params.customCSS -}}
 <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
 {{ end }}
+
+<!-- Font family -->
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
 
 {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
 {{- template "_internal/opengraph.html" . -}}
